@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 document.querySelector(".btn.primary").addEventListener("click", () =>{
-    window.open("CV_Galih.pdf", "_blank");
+    window.open("/Galih-Radhitya/404", "_blank");
 });
 
 document.querySelector(".btn.secondary").addEventListener("click", () =>{
