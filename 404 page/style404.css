@@ -1,0 +1,35 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f0f0f;
+    color: #e6d5c0;
+    font-family: sans-serif;
+}
+
+.notfound{
+    text-align: center;
+}
+
+.notfound h1 {
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+.notfound p {
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.notfound a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 999pcx;
+    background: #6c63ff;
+    color: white;
+    transition: 0.3s;
+}
+
+.notfound a:hover {
+    background: #554ee6;
+}
