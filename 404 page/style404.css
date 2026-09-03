@@ -6,16 +6,60 @@ body {
     background: #0f0f0f;
     color: #e6d5c0;
     font-family: sans-serif;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+       rgba(100, 80, 255, 0.08)
+        transparent 70%
+        );
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: glow 6s ease-in-out infinite;
+        pointer-events: none;
+}
+
+@keyframes glow {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.6;
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
 }
 
 .notfound{
     text-align: center;
 }
 
+
+<!--text-->
 .notfound h1 {
     font-size: 96px;
     margin-bottom: 10px;
+    animation: fadescale 0.8s ease-out;
 }
+
+@keyframes fadescale {
+    to {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    from {
+        opacity: 1;
+        transform: scale(1.8);
+    }
+}
+
 .notfound p {
     opacity: 0.7;
     margin-bottom: 30px;

@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 });
 
 document.querySelector(".btn.primary").addEventListener("click", () =>{
-    window.open("/Galih-Radhitya/404", "_blank");
+    window.location.href = "/Galih-Radhitya/404";
 });
 
 document.querySelector(".btn.secondary").addEventListener("click", () =>{
